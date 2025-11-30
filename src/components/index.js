@@ -1,3 +1,5 @@
 export { default as Header } from './Header'
 export { default as ProtectedRoute } from './ProtectedRoute'
 export { default as ProductCard } from './ProductCard'
+export { default as Loading } from './Loading'
+export { default as ErrorBoundary } from './ErrorBoundary'

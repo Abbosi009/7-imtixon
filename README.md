@@ -47,25 +47,31 @@ src/
 ├── components/          # Qayta foydalanish mumkin bo'lgan komponentlar
 │   ├── Header.jsx      # Navigation header
 │   ├── ProtectedRoute.jsx  # Route himoyalash
-│   └── ProductCard.jsx # Product display component
-├── pages/              # Page komponentlar
+│   ├── ProductCard.jsx     # Product display component
+│   ├── Loading.jsx         # Loading component
+│   ├── ErrorBoundary.jsx   # Error handling component
+│   └── index.js            # Components barrel export
 │   ├── Home.jsx        # Bosh sahifa
 │   ├── Login.jsx       # Login sahifasi
 │   ├── SignUp.jsx      # Ro'yxatdan o'tish
 │   ├── Products.jsx    # Mahsulotlar sahifasi
 │   ├── Dashboard.jsx   # Admin dashboard
-│   └── Profile.jsx     # Foydalanuvchi profili
-├── stores/             # Zustand stores
+│   ├── Profile.jsx         # Foydalanuvchi profili
+│   └── index.js            # Pages barrel export
 │   ├── authStore.js    # Authentication state
 │   └── productStore.js # Products state
 ├── schemas/            # Zod validation schemas
 │   └── validationSchemas.js
-├── hooks/              # Custom React hooks
-│   └── useValidation.js
-├── styles/             # CSS styles
+├── hooks/                  # Custom React hooks
+│   ├── useValidation.js    # Validation hook
+│   └── index.js            # Hooks barrel export
+├── utils/                  # Utility functions
+│   ├── storage.js          # localStorage helpers
+│   ├── formatters.js       # Formatting utilities
+│   └── index.js            # Utils barrel export
 │   └── index.css       # Global styles
-├── App.jsx             # Root component
-└── main.jsx            # Entry point
+├── App.jsx                 # Root component with ErrorBoundary
+└── main.jsx                # Entry point
 ```
 
 ## 🔐 Authentication
