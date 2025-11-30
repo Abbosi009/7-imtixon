@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Header, ProtectedRoute, ErrorBoundary, Loading } from '@/components'
 import { Home, Login, SignUp, Products, Dashboard, Profile } from '@/pages'
+import ProductDetails from '@/pages/ProductDetails'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/products" element={<Products />} />
+                <Route path="/products/:id" element={<ProductDetails />} />
                 <Route path="/profile" element={
                   <ProtectedRoute>
                     <Profile />

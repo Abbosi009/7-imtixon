@@ -1,5 +1,4 @@
 import { useCallback } from 'react'
-import { ZodSchema } from 'zod'
 
 export const useValidation = () => {
   const validate = useCallback((schema, data) => {
